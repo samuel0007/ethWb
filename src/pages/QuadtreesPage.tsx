@@ -4,7 +4,7 @@ import P5QuadTrees from '../sketches/quadtrees/quadtrees';
 
 const QuadtreesPage: React.FC = () => {
   return (
-    <div className="mainPage bg-gray-200">
+    <div className="mainPage p-10 h-full bg-white">
       <div className="flex justify-center align-center">
         <P5QuadTrees />
       </div>

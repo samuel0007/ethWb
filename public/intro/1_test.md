@@ -42,6 +42,10 @@ int s = 12;
 int s = 12;
 ~~~
 
+~~~js
+let s = "yolo";
+~~~
+
 # Test 2
 
 loremEx reprehenderit et enim eu enim enim sunt veniam nulla cillum. Officia elit dolore ea laborum consectetur ex aute deserunt. Amet nulla anim sunt adipisicing magna et labore ut laboris. Voluptate commodo eu dolor fugiat non do irure ullamco reprehenderit nostrud non do duis cupidatat. Amet aliquip occaecat tempor id Lorem tempor incididunt sit magna. In deserunt id Lorem eiusmod ex culpa sint officia sit. Id ex et irure laborum exercitation laboris tempor labore anim deserunt ipsum laboris in amet.
