@@ -28,8 +28,10 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-syntax-highlighter": "^15.4.4",
+    "rehype-katex": "^6.0.1",
     "rehype-raw": "^6.0.0",
     "remark-gfm": "^2.0.0",
+    "remark-math": "^5.1.0",
     "remark-slug": "^7.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.2.4",
@@ -47,16 +49,9 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
