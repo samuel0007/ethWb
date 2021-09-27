@@ -4,13 +4,16 @@ import { HashLink } from "react-router-hash-link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkSlug from "remark-slug";
-import rehypeRaw from 'rehype-raw'
+import rehypeRaw from "rehype-raw";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
+import 'katex/dist/katex.min.css'
 import "github-markdown-css";
-import "./markdown.css";
+import "./markdown.css";  
 
 const RouterLink: any = (props:any) => {
   return props.href.match(/^(https?:)?\/\//) ? (
@@ -28,8 +31,8 @@ const BookMarkdown: React.FC<BookMardownProps> = (props) => {
   return (
     <div className="markdown-body">
       <ReactMarkdown
-        rehypePlugins={[rehypeRaw]}
-        remarkPlugins={[remarkGfm, remarkSlug]}
+        rehypePlugins={[rehypeKatex, rehypeRaw]}
+        remarkPlugins={[remarkGfm, remarkSlug, remarkMath]}
         children={props.source}
         components={{
           code: ({ node, inline, className, children, ...props }) => {
