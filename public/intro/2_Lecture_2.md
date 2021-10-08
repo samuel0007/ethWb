@@ -8,9 +8,9 @@
 
 ## Expressions
 
-An expression is a computation represented by a sequence of _operators_ and _operands_, and are subdivised into _primary_ expressions and _composed_ expressions. Every _composed_ expressions is made by combining primary _expressions_ through _operations_. They are the building blocks of every C++ Program, and it's very important that you grasp well how they work to go further in the lecture.
+Expressions are sequences of _operators_ and _operands_ that represent a computation, they can be subdivided into _primary_ expressions and _composed_ expressions. Every _composed_ expressions is made by combining primary _expressions_ through _operations_. They are the building blocks of every C++ Program, and it's very important that you grasp well how they work to go further in the lecture.
 
-Every expression has a *type* and a *value*. The type is fixed at compile time (int, ...), but the value and the side effects only materialize when the expression get evaluated. Evaluating an expression is the most frequent activity going on while a C++ program is executed; the evaluation computes the value of the expression and carries out its effect (if any).
+Every expression has a *type* and a *value*. The type is fixed at compile time (int, ...), but the value and the side effects only materialize when the expression gets evaluated. Evaluating an expression is the most frequent activity going on while a C++ program is executed; the evaluation computes the value of the expression and carries out its effect (if any).
 
 ### Lvalues and Rvalues
 
