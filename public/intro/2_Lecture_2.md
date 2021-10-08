@@ -20,9 +20,14 @@ Every expression that is not an lvalue is an rvalue. For example, literals are r
 
 ### Precedence and associativity
 
-Precedence and associativity rules are convention to choose the order at which the operators get evaluated in a composite expression. We use precedence to choose which operator goes first between _different_ operators, and associativity to choose which operator goes first between operators that have the same precedence.
+_Precedence_ and _associativity_ are the two rules that dictate the **order** in which the operators are **evaluated** inside of a composite expression.  
+**Precedence** specifies which operator gets evaluated **first** between **_different_ operators** (the lowest the number the earlier), while **associativity** specifies which operator goes **first** between operators that have the **same precedence**.
 
-As a rule of thumb for precedence, binary arithmetic operators (e.g. +) bind more strongly than relational operators (e.g. <); and these bind more strongly than binary logical operators (e.g. &&).
+As a **rule of thumb** for precedence, arithmetic operators (e.g. +) bind **stronger** than relational operators (e.g. <); who in turn bind **stronger** than binary logical operators (e.g. &&).
+
+Of course, you can always use **parenthesis** to specify your own order of evaluation.
+
+Here's a list with the most common operators and their precedence and associativity:
 
 | Precedence | Operator                 | Associativity |
 |------------|--------------------------|---------------|
@@ -35,6 +40,7 @@ As a rule of thumb for precedence, binary arithmetic operators (e.g. +) bind mor
 | 14         | &&                       | Left-to-right |
 | 15         | \|\|                     | Left-to-right |
 | 16         | =                        | Right-to-left |
+
 
 ### Short-Circuting
 
