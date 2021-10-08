@@ -52,7 +52,7 @@ Note: When there is an "overflow", the counter gets back to 0. Explicitly, if yo
 
 ### Quickly find 2's complement representation of a negative number
 
-<ol class="list-decimal">
+<ol style="list-style-type: decimal">
 <li>Convert the absolute value of x to binary.</li>
 <li>Flip bits.</li>
 <li>Add 1.</li>
