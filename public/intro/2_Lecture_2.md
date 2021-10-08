@@ -82,7 +82,7 @@ Debugging is an important part of programming, this section will introduce you t
 
 ### Asserts
 
-We can use assert statements to check our assumptions in various places. When an assert statement fails, we get a precise location information. Asserts are generally only use during the development phase, and below you find an example on how to desactivate them with a macro for your production code. To use assert statements, you have to include the _assert.h_ library.
+We can use assert statements to check our assumptions in various places. When an assert statement fails during runtime, the program is stopped we get and error message with precise location information. Asserts are generally only used during the development phase, and below you find an example on how to deactivate them with a macro for your production code. To use assert statements, you have to include the _assert.h_ library.
 
 ~~~cpp
 #include <assert.h>     // assert library
@@ -104,7 +104,7 @@ Program tracing is the process of executing program code by hand, with concrete 
 
 ### std::cout
 
-This is your most fundamental tool for debugging, you can always use the standard output as a way to know what is the actual state of a variable.
+This is your most fundamental tool for debugging, you can always use the standard output as a way to know what the actual value of a variable at a given point in the program is.
 
 ~~~cpp
 int x = 5;
