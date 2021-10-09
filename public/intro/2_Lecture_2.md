@@ -42,7 +42,7 @@ When evaluating expressions, the compiler follows another special rule called Sh
 
 ## Loops
 
-Loops are the way to express iteration - executing a statement many times - in the flow of the program. It avoid copy pasting the same line of code ten times !
+Loops are the way to express iteration - executing a statement many times - in the flow of the program. It helps you to avoid having to copy-pasting the same line of code ten times !
 
 ### While loops
 
@@ -61,7 +61,7 @@ while(condition) { // 1: check if condition is true, if yes execute the statemen
 
 ### For loops
 
-For loops are simply syntactic sugar (the compiled code at the end is the same) to express a specific kind of while loops:
+For loops are simply syntactic sugar (the compiled code at the end is the same) to express specific kinds of while loops:
 
 ~~~cpp
 unsigned int i = 0; // 1. initialization
