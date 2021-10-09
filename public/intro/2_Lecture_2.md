@@ -82,7 +82,7 @@ Debugging is an important part of programming, this section will introduce you t
 
 ### Asserts
 
-We can use assert statements to check our assumptions in various places. When an assert statement fails during runtime, the program is stopped we get and error message with precise location information. Asserts are generally only used during the development phase, and below you find an example on how to deactivate them with a macro for your production code. To use assert statements, you have to include the _assert.h_ library.
+We can use assert statements to check our assumptions in various places. When an assert statement fails during runtime, the program is stopped we get an error message with precise location information. Asserts are generally only used during the development phase, and below you find an example on how to deactivate them with a macro for your production code. To use assert statements, you have to include the _assert.h_ library.
 
 ~~~cpp
 #include <assert.h>     // assert library
