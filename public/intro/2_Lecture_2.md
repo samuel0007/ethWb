@@ -14,9 +14,21 @@ Every expression has a *type* and a *value*. The type is fixed at compile time (
 
 ### Lvalues and Rvalues
 
-An lvalue is an expression that has an address. The value of an lvalue is defined as the value of the object at its address (try to output the expression (b = 5)). We say that a lvalue _refers_ to the object at its address.
+~~~cpp
 
-Every expression that is not an lvalue is an rvalue. For example, literals are rvalues: there is no address associated with the int-literal 0. In reality (by C++ standards about [value category](https://en.cppreference.com/w/cpp/language/value_category)), it's slightly more complicated, but we won't go so deep for this lecture.
+              int var = 42*320+3
+//      Lvalue ____↑        ↑______ Rvalue
+~~~
+
+Expressions can also be subdivided in __lvalues__ and __rvalues__.
+
+An **lvalue** is an expression that **has an address**. The value of an lvalue is defined as the value of the object at its address (try to output the expression (b = 5)). We say that a lvalue _refers_ to the object at its address.
+
+Every expression that is not an lvalue is an **rvalue**. For example, literals and arithmetic expressions are rvalues: there is no address associated with the int-literal  ``0`` or with the expression ``6/2`` .
+
+When we have an assignment statement, the operator "``=``" expects an **lvalue** on its **left** hand side and an **rvalue** on its **right**, this is why we call them like this.
+
+In reality (by C++ standards about [value category](https://en.cppreference.com/w/cpp/language/value_category)), it's slightly more complicated, but we won't go so deep for this lecture.
 
 ### Precedence and associativity
 
