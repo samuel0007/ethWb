@@ -41,7 +41,6 @@ Here's a list with the most common operators and their precedence and associativ
 | 15         | \|\|                     | Left-to-right |
 | 16         | =                        | Right-to-left |
 
-
 ### Short-Circuting
 
 When evaluating expressions, the compiler follows another special rule called Short Circuit evaluation for the operators && and ||. For these operators the compiler guarantees to always evaluate the left expression first. If the overall result can be inferred from the left expression alone, then the right expression is not evaluated, thus saving useless computation.
